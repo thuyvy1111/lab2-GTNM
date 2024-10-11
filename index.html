@@ -3,17 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Đăng Nhập</title>
+    <title>Màn Hình Đăng Nhập</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center; /* Căn giữa theo chiều ngang */
+            align-items: center;     /* Căn giữa theo chiều dọc */
+            height: 100vh;          /* Chiều cao toàn bộ viewport */
+            margin: 0;              /* Xóa margin mặc định */
+            font-family: Arial, sans-serif; /* Chọn font chữ */
+            background-color: #f0f2f5; /* Màu nền nhẹ */
+        }
+
+        .login-container {
+            background-color: white; /* Nền trắng cho container */
+            border-radius: 10px;     /* Bo góc */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Đổ bóng */
+            padding: 40px;           /* Khoảng cách bên trong */
+            width: 300px;            /* Chiều rộng của container */
+            text-align: center;      /* Căn giữa văn bản */
+        }
+
+        h2 {
+            margin-bottom: 20px;     /* Khoảng cách dưới tiêu đề */
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;             /* Chiều rộng 100% */
+            padding: 10px;          /* Khoảng cách bên trong */
+            margin: 10px 0;         /* Khoảng cách trên và dưới */
+            border: 1px solid #ccc; /* Đường viền */
+            border-radius: 5px;     /* Bo góc */
+            box-sizing: border-box;  /* Bao gồm padding và border trong chiều rộng */
+        }
+
+        button {
+            background-color: #4CAF50; /* Màu nền nút */
+            color: white;               /* Màu chữ nút */
+            padding: 10px;              /* Khoảng cách bên trong */
+            border: none;               /* Không có đường viền */
+            border-radius: 5px;        /* Bo góc */
+            cursor: pointer;            /* Con trỏ khi di chuột */
+            width: 100%;                /* Chiều rộng 100% */
+        }
+
+        button:hover {
+            background-color: #45a049; /* Màu khi di chuột */
+        }
+
+        .footer {
+            margin-top: 20px;          /* Khoảng cách trên footer */
+            font-size: 12px;           /* Kích thước chữ nhỏ hơn */
+        }
+
+    </style>
 </head>
 <body>
-    <div>
+    <div class="login-container">
         <h2>Đăng Nhập</h2>
-        <form action="dashboard.html">
-            <input type="text" placeholder="Tên người dùng/Email" required>
+        <form>
+            <input type="text" placeholder="Tên đăng nhập" required>
             <input type="password" placeholder="Mật khẩu" required>
             <button type="submit">Đăng Nhập</button>
         </form>
-        <a href="#">Quên Mật Khẩu?</a>
+        <div class="footer">
+            <p><a href="#">Quên mật khẩu?</a></p>
+            <p><a href="#">Đăng ký tài khoản mới</a></p>
+        </div>
     </div>
 </body>
 </html>
