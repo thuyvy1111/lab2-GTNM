@@ -4,15 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bài Tập</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f0f2f5;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Căn giữa theo chiều ngang */
+            justify-content: center; /* Căn giữa theo chiều dọc */
+            height: 100vh; /* Chiều cao toàn bộ viewport */
+            text-align: center; /* Căn giữa văn bản */
+        }
+
+        h1 {
+            color: #4CAF50; /* Màu tiêu đề */
+            margin-bottom: 20px; /* Khoảng cách dưới tiêu đề */
+        }
+
+        p {
+            color: #666; /* Màu mô tả */
+            margin-bottom: 20px; /* Khoảng cách dưới mô tả */
+        }
+
+        textarea {
+            width: 80%; /* Chiều rộng 80% */
+            max-width: 600px; /* Chiều rộng tối đa */
+            height: 200px; /* Chiều cao cố định */
+            border-radius: 5px; /* Bo góc */
+            border: 1px solid #ccc; /* Đường viền */
+            padding: 10px; /* Khoảng cách bên trong */
+            resize: none; /* Không cho phép thay đổi kích thước */
+        }
+
+        button {
+            background-color: #2196F3; /* Màu nền nút */
+            color: white; /* Màu chữ nút */
+            border: none; /* Không có đường biên */
+            border-radius: 5px; /* Bo góc */
+            padding: 10px 20px; /* Khoảng cách bên trong */
+            margin: 5px; /* Khoảng cách giữa các nút */
+            cursor: pointer; /* Con trỏ khi di chuột */
+        }
+
+        button:hover {
+            background-color: #1976D2; /* Màu khi di chuột */
+        }
+
+        a {
+            margin-top: 20px; /* Khoảng cách trên liên kết */
+            color: #2196F3; /* Màu liên kết */
+            text-decoration: none; /* Xóa gạch chân */
+        }
+
+        a:hover {
+            text-decoration: underline; /* Gạch chân khi di chuột */
+        }
+    </style>
 </head>
 <body>
     <h1>Bài Tập 1</h1>
     <p>Mô tả: Viết một chương trình in ra "Hello, World!"</p>
     <h2>Trình Soạn Thảo Code</h2>
-    <textarea rows="10" cols="50" placeholder="Nhập mã của bạn ở đây..."></textarea><br>
+    <textarea placeholder="Nhập mã của bạn ở đây..."></textarea><br>
     <button>Chạy Code</button>
     <button>Nộp Code</button>
-    <br><br>
+    <br>
     <a href="dashboard.html">Quay lại Bảng Điều Khiển</a>
 </body>
 </html>
